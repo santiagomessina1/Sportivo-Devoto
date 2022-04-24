@@ -19,7 +19,7 @@
     transition: transform, background-color 1.5s;
 }
 
-.nav-link{margin: 15px;}
+.nav-link{margin: 15px; text-transform: uppercase;}
 .headerInicio{background-color: black;}
 .navbar-toggler{background-color: red;}
 
