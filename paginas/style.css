@@ -188,9 +188,6 @@ a{
            opacity: 1;
            transition: 1s;
        }
-
-
-
        .actividades1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr) repeat(2, 0);
