@@ -1,0 +1,83 @@
+@import "../base/_variables.scss";
+
+main{
+    .bodyBg{
+        background-color: $color-fondo;  
+    }
+    .centrar__h1{
+        display: flex;
+        justify-content: center;
+        color: $color-texto;
+        text-transform: uppercase;
+        font-family:$fuente-principal; 
+        font-style: italic;
+        margin-top: 20px;
+        text-align: center;
+        
+        h1{
+            font-size: 60px;
+        }
+    }
+
+    
+.inicio2{
+    display: flex;
+    justify-content: center;
+    
+    .row{
+        width: 800px;
+        
+        .col-sm-6{
+            
+            
+            
+            .card{
+                
+                margin: 30px;
+                background-color: rgb(230, 230, 230);
+                text-align: center;
+                box-shadow: 6px 6px 5px 0px rgba(84,84,84,0.75);
+                -webkit-box-shadow: 6px 6px 5px 0px rgba(84,84,84,0.75);
+                -moz-box-shadow: 6px 6px 5px 0px rgba(84,84,84,0.75);
+
+                .card-body{
+                    
+                    ul{
+                        padding: 0;
+                    }
+                    
+                    .card-title{
+                        font-size: 30px; 
+                    }
+                    
+                    
+                    .precio{
+                        background-color: red;
+                        padding: 15px;
+                        border-radius: 4px;
+                        color: white;  
+                    }
+                    .lista{
+                        list-style: none;  
+                    }
+                }   
+            }
+
+            .card2{
+                background-color: rgb(10, 9, 9);
+                color: white;
+            }
+
+            .card:hover{
+                transform: scale(1.06);
+                transition: transform 1s;
+            }
+
+            
+        }
+        
+    }
+
+    
+}
+}

@@ -1,0 +1,53 @@
+@import "./base/_variables.scss";
+.inicio{
+    .carousel-inner{
+        height: 100vh;
+        .carousel-item{
+            background-size: cover;
+        }
+        
+        .carousel-item > div{
+            height: 100vh;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            
+            
+            .hero-headline{
+                color: $color-texto;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+                font-family: $fuente-principal;
+            }
+
+            .hero-subhead{
+                text-transform: uppercase;
+                font-size: 16px;
+
+                .boton_inicio{
+                    text-decoration: none;
+                    color: $color-texto;
+                    background-color: $color-principal;
+                    padding: 10px;
+                }
+            }
+        }
+
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .inicio{
+        .carousel-inner{
+            
+            .carousel-item{
+                background-size: cover;
+                background-position: center;
+            }
+            
+        }
+    }
+}

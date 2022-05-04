@@ -10,7 +10,7 @@
    font-size: 24px;
    font-style: italic;  
 }
-.rojo{color: red;}
+
 
 
 .navBar1 .nav-link:hover{
@@ -25,15 +25,15 @@
 }
 .nav-link{margin: 15px; text-transform: uppercase;}
 .headerInicio{background-color: black;}
-.navbar-toggler{background-color: red;}
+.navbar-toggler{background-color: red;} 
 
-.carousel-caption h1{
+/* .carousel-caption h1{
    
    font-size: 50px;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    text-transform: uppercase;
    font-style: italic;
-}
+} */
 
 .boton_inicio{
    
@@ -42,10 +42,7 @@
    background-color: red;
    padding: 10px;
 }
-a{
-   text-decoration: none;
-   color: white;
-}
+
 
 .carousel-item > div {
    height: 100vh;
@@ -69,10 +66,10 @@ a{
  
  
 
- .centrado{
+  .centrado{
    text-align: center;
    padding: 40px;
-}
+} 
 
 .card{
    margin: 30px;
@@ -81,49 +78,18 @@ a{
    box-shadow: 3px 5px 3px rgba(5, 50, 3, .4);
 }
 
-.row{
+/* .row{
    width: 800px;
    
-}
-.imgCards{
-   width: 280px;
-   margin: auto;
-   border-radius: 8px;
-}
-.precio{
+} */
+
+/* .precio{
    background-color: red;
    padding: 15px;
    border-radius: 4px;
    color: white;
    font-size: 24px;
-}
-
- .centrado{
-     text-align: center;
-     padding: 40px;
- }
-
- .card{
-     margin: 30px;
-     background-color: rgb(230, 230, 230);
-     text-align: center;
- }
-
- .row{
-     width: 800px;
-     
- }
- .imgCards{
-     width: 280px;
-     margin: auto;
- }
- .precio{
-     background-color: red;
-
- }
-
- 
-
+} */
 
    .centrar__h1{
        display: flex;
@@ -143,17 +109,17 @@ a{
 
    
 
-   .lista{
+   /* .lista{
        list-style: none;
        list-style-type: ;
-   }
-   .fa-solid{
+   } */
+   /* .fa-solid{
        color: red;
-   }
+   } */
 
-   .card-title{
+   /* .card-title{
        font-size: 30px;
-   }
+   } */
    .card2{
        background-color: rgb(10, 9, 9);
        color: white;}
