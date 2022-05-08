@@ -9,14 +9,10 @@
         .carousel-item > div{
             height: 100vh;
             width: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            
-            
-            
+            @include flexbox (column, center, center);
+
             .hero-headline{
-                color: $color-texto;
+                color: map-get($map: $colores, $key:"texto" );                
                 margin-bottom: 30px;
                 text-transform: uppercase;
                 font-family: $fuente-principal;
@@ -28,8 +24,8 @@
 
                 .boton_inicio{
                     text-decoration: none;
-                    color: $color-texto;
-                    background-color: $color-principal;
+                    color: map-get($map: $colores, $key: "texto");
+                    background-color: map-get($map: $colores, $key: "principal");
                     padding: 10px;
                 }
             }
@@ -39,7 +35,7 @@
     }
 }
 
-@media only screen and (max-width: 768px){
+@include mediaQuery (tablet){
     .inicio{
         .carousel-inner{
             

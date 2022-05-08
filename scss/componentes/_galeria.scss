@@ -1,0 +1,116 @@
+@import "../base/_variables.scss";
+
+.inicio{
+
+    .actividades1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) repeat(2, 0);
+        grid-template-rows: repeat(2, 1fr) repeat(2, 0);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        gap: 12px;
+        margin-left: 20px;
+        
+
+
+        .boxeo1 { 
+            grid-area: 1 / 1 / 2 / 2; 
+            background-color: map-get($map: $colores, $key:"secundario");;
+             color: map-get($map: $colores, $key:"texto");;
+            @extend %actividades;
+
+            .contenido1{
+                @extend %contenido1;
+            }
+        }
+        .crossfit1 {
+             grid-area: 1 / 2 / 2 / 3;
+             background-color: map-get($map: $colores, $key:"principal");
+             color: map-get($map: $colores, $key:"texto");
+             @extend %actividades;
+
+             h3{
+                color: map-get($map: $colores, $key:"texto");
+            }
+            .fa-solid{ color: map-get($map: $colores, $key:"texto");}
+
+            .contenido1{
+                @include contenido (map-get($map: $colores, $key:"texto"))
+            }
+            }
+        .spinning1 {
+             grid-area: 1 / 3 / 2 / 4; 
+             background-color: map-get($map: $colores, $key:"secundario");
+             color: map-get($map: $colores, $key:"texto");
+             @extend %actividades;
+             
+
+             .contenido1{
+                @include contenido (map-get($map: $colores, $key:"principal"))
+            }
+            }
+        .zumba1 {
+             grid-area: 2 / 1 / 3 / 2; 
+             color: map-get($map: $colores, $key:"texto");
+             background-color: map-get($map: $colores, $key:"principal");
+             @extend %actividades;
+
+             h3{
+                color: map-get($map: $colores, $key:"texto");
+            }
+            .fa-solid{color: map-get($map: $colores, $key:"texto");}
+
+            .contenido1{
+                @include contenido (map-get($map: $colores, $key:"texto"))
+            }
+            }
+        .gimnasio1 { 
+            grid-area: 2 / 2 / 3 / 3; 
+            background-color: map-get($map: $colores, $key:"secundario");
+            color: map-get($map: $colores, $key:"texto");
+            @extend %actividades;
+
+            .contenido1{
+                @extend %contenido1;
+            }
+        }
+        .football1 { 
+            grid-area: 2 / 3 / 3 / 4; 
+            background-color: map-get($map: $colores, $key:"principal");
+             color: map-get($map: $colores, $key:"texto");;
+             @extend %actividades;
+
+            h3{
+                color: map-get($map: $colores, $key:"texto");
+            }
+            .fa-solid {color: map-get($map: $colores, $key:"texto");}
+
+            .contenido1{
+                @include contenido (map-get($map: $colores, $key:"texto"))
+            }
+        }
+    }
+}
+@include mediaQuery (tablet){
+    .inicio{
+
+        .actividades1{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 10px;
+            margin: 20px;
+        
+            .boxeo1 { grid-area: 1 / 1 / 2 / 2; }
+            .crossfit1 { grid-area: 2 / 1 / 3 / 2; }
+            .spinning1 { grid-area: 3 / 1 / 4 / 2; }
+            .zumba1 { grid-area: 4 / 1 / 5 / 2; }
+            .gimnasio1 { grid-area: 5 / 1 / 6 / 2; }
+            .football1 { grid-area: 6 / 1 / 7 / 2; }
+       
+        }
+    }
+
+}
+

@@ -2,12 +2,12 @@
 
 main{
     .bodyBg{
-        background-color: $color-fondo;  
+        background-color:map-get($map: $colores, $key:"fondo" ); 
+        
     }
     .centrar__h1{
-        display: flex;
-        justify-content: center;
-        color: $color-texto;
+        @extend %flex;
+        color: map-get($map: $colores, $key:"texto" );
         text-transform: uppercase;
         font-family:$fuente-principal; 
         font-style: italic;
@@ -21,14 +21,12 @@ main{
 
     
 .inicio2{
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     
     .row{
         width: 800px;
         
         .col-sm-6{
-            
             
             
             .card{
@@ -52,10 +50,10 @@ main{
                     
                     
                     .precio{
-                        background-color: red;
+                        background-color: map-get($map: $colores, $key:"principal" );
                         padding: 15px;
                         border-radius: 4px;
-                        color: white;  
+                        color: map-get($map: $colores, $key:"texto" );  
                     }
                     .lista{
                         list-style: none;  
@@ -65,7 +63,7 @@ main{
 
             .card2{
                 background-color: rgb(10, 9, 9);
-                color: white;
+                color: map-get($map: $colores, $key:"texto" );
             }
 
             .card:hover{
@@ -81,3 +79,27 @@ main{
     
 }
 }
+
+@include mediaQuery (tablet){
+    main{
+        .bodyBg{
+            background-color: map-get($map: $colores, $key:"fondo" );  
+        }
+
+        .inicio2{
+            
+            .row{
+                width: 320px;
+                .col-sm-6{
+                    width: 320px;
+                    padding-right: 0;
+                    .card{
+                        
+                    padding-right: 0;
+                }   }
+            }
+        }
+    }
+}
+
+

@@ -11,7 +11,7 @@
 }
 // Nav
 .headerInicio{
-    background-color: $color-secundario;
+    background-color: map-get($map: $colores, $key:"secundario" );
 
     .container-fluid{
     
@@ -22,12 +22,12 @@
             font-style: italic; 
     
             span{
-                color: $color-principal;
+                color: map-get($map: $colores, $key:"principal" );
             }
         }
 
         .navbar-toggler{
-            background-color: $color-principal;
+            background-color: map-get($map: $colores, $key:"principal" );
         }
     
     
@@ -52,7 +52,7 @@
 
 .pie-pagina{
     width: 100%;
-    background-color: $color-secundario;
+    background-color: map-get($map: $colores, $key:"secundario" );
     justify-content: center;
     align-items: center;
     
@@ -84,25 +84,25 @@
                 align-items: center;
 
                 a{
-                    color: $color-texto;
+                    color: map-get($map: $colores, $key:"texto" );
                     text-transform: uppercase;
                     font-style: italic;
                     font-size: 24px;
 
                     span{
-                        color: $color-principal;
+                        color: map-get($map: $colores, $key:"principal" );
                     }
                 }
             }
 
             h2{
-                color: $color-principal;
+                color: map-get($map: $colores, $key:"principal" );
                 margin-bottom: 25px;
                 font-size: 20px;
             }
 
             p{
-                color: $color-texto;
+                color: map-get($map: $colores, $key:"principal" );
                 margin-bottom: 10px;
             }
         }
@@ -116,7 +116,7 @@
                 width: 45px;
                 height: 45px;
                 line-height: 45px;
-                color: $color-principal;
+                color: map-get($map: $colores, $key:"principal" );
                 margin-right: 10px;
                 background-color: rgb(16, 16, 16);
                 text-align: center;
@@ -135,7 +135,7 @@
         background-color: rgb(16, 16, 16);
         padding: 15px 10px;
         text-align: center;
-        color: $color-texto; 
+        color: map-get($map: $colores, $key:"texto" ); 
 
         small{
             font-size: 15px; 
@@ -166,5 +166,5 @@
 
 
 .fa-solid{
-    color: $color-principal;
+    color: map-get($map: $colores, $key:"principal" );
 }

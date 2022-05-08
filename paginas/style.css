@@ -466,7 +466,7 @@ ul {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 32px;
     transition: 1.3s;
-    transition: background-color transform  1.5s;}
+    transition: background-color 1.5s;}
 
     .boxeo{
         height: 300px;
@@ -627,7 +627,7 @@ ul {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 32px;
         transition: 1.3s;
-        transition: background-color transform  1.5s;}
+        transition: background-color 1.5s;}
     }
     
     
@@ -680,12 +680,8 @@ ul {
             background-position: center;
             
         }
-        
-}
 
 
-   
-}
 
 
 
