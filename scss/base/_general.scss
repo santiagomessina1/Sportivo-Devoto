@@ -135,7 +135,7 @@
         background-color: rgb(16, 16, 16);
         padding: 15px 10px;
         text-align: center;
-        color: map-get($map: $colores, $key:"texto" ); 
+        color: map-get($map: $colores, $key:"texto"); 
 
         small{
             font-size: 15px; 
