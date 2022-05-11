@@ -102,7 +102,7 @@
             }
 
             p{
-                color: map-get($map: $colores, $key:"texto" );
+                color: map-get($map: $colores, $key: "texto");
                 margin-bottom: 10px;
             }
         }
