@@ -52,7 +52,8 @@
         }
 
         .boxeo{
-            @include clases (url(../../imagenes/boxeo.jpg));
+
+          @include clases (url(../../imagenes/boxeo.jpg));
         }
 
         .crossfit{
