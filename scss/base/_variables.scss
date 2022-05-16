@@ -38,12 +38,12 @@ $colores: (
     align-items: $align;
 }
 
-@mixin clases ($img){
-    height: 300px;
-    background-image: $img;
-    background-size: 450px;
-    background-position: center;
-}
+// @mixin clases ($img){
+//     height: 300px;
+//     // background-image: $img;
+//     background-size: 450px;
+//     background-position: center;
+// }
 
 @mixin contenido ($color){
     font-family: $fuente-principal;
@@ -52,6 +52,12 @@ $colores: (
 }
 
 // EXTEND
+
+%clases{
+    height: 300px;
+    background-size: 450px;
+    background-position: center;
+}
 
 %flex{
     display: flex;

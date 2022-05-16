@@ -18,11 +18,13 @@
         padding-bottom: 30px;
 
         
-
+        
         .tarjetas{
             width: 400px;
             height: 300px;
             border-radius: 10px;
+
+            
 
             .contenido{
                 opacity: 0;
@@ -49,36 +51,52 @@
                 text-decoration: none;
             }
 
+
+            
+            
         }
 
         .boxeo{
-
-          @include clases (url(../../imagenes/boxeo.jpg));
+        @extend %clases;
+        background-image: url(../../imagenes/boxeo.jpg);
         }
 
         .crossfit{
-            @include clases (url(../../imagenes/crossfit.jpg));
+            @extend %clases;    
+            background-image: url(../../imagenes/crossfit.jpg);
+           
+
         }
 
         .spinning{
-            @include clases (url(../../imagenes/spinning.jpg));
+            @extend %clases;
+            background-image: url(../../imagenes/spinning.jpg);
+    
         }
         
         .zumba{
-            @include clases (url(../../imagenes/zumba.jpg));
+            @extend %clases;
+            background-image: url(../../imagenes/zumba.jpg);
+    
         }
         
         .gimnasio{
-            @include clases (url(../../imagenes/gym.jpeg));
+            @extend %clases;
+            background-image: url(../../imagenes/gym.jpeg);
+    
         }
         
         
         .football{
-            @include clases (url(../../imagenes/football.jpeg));
+            @extend %clases;
+            background-image: url(../../imagenes/football.jpeg);
+    
         }
 
         
     }
+
+    
 
     
 }
@@ -117,28 +135,22 @@
             }
     
             .boxeo{
-                @include clases (url(../../imagenes/boxeo.jpg));
             }
     
             .crossfit{
-                @include clases (url(../../imagenes/crossfit.jpg));
             }
     
             .spinning{
-                @include clases (url(../../imagenes/spinning.jpg));
             }
             
             .zumba{
-                @include clases (url(../../imagenes/zumba.jpg));
             }
             
             .gimnasio{
-                @include clases (url(../../imagenes/gym.jpeg));
             }
             
             
             .football{
-                @include clases (url(../../imagenes/football.jpeg));
             }
     
             
