@@ -79,8 +79,56 @@ main{
     
 }
 }
+@include mediaQuery (desktop){
+    main{
+        .bodyBg{
+            background-color: map-get($map: $colores, $key:"fondo" );  
+        }
+
+        .inicio2{
+            
+            
+            .row{
+                width: 550px;
+                flex-wrap: nowrap;
+                display: flex;
+                justify-content: center;
+
+                .col-sm-6{
+                    width: 550px;
+                    padding: 0;
+                    .card{
+                        
+                    padding-right: 0;
+                }   }
+            }
+        }
+    }
+}
 
 @include mediaQuery (tablet){
+    main{
+        .bodyBg{
+            background-color: map-get($map: $colores, $key:"fondo" );  
+        }
+
+        .inicio2{
+            
+            .row{
+                width: 500px;
+                margin: auto;
+                .col-sm-6{
+                    width: 500px;
+                    padding-right: 0;
+                    .card{
+                        
+                    padding-right: 0;
+                }   }
+            }
+        }
+    }
+}
+@include mediaQuery (mobile){
     main{
         .bodyBg{
             background-color: map-get($map: $colores, $key:"fondo" );  
@@ -101,5 +149,6 @@ main{
         }
     }
 }
+
 
 

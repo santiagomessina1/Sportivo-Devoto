@@ -91,7 +91,9 @@
         }
     }
 }
-@include mediaQuery (tablet){
+
+
+@include mediaQuery (mobile){
     .inicio{
 
         .actividades1{

@@ -1,15 +1,8 @@
 @import "../base/_variables.scss";
 
+
 .inicio{
-    .centrar__h1{
-        @extend %titulo;
-
-       h1{
-        font-size: 60px;
-       }
-    }
     
-
     .actividades{
         display: flex;
         justify-content: space-evenly;
@@ -34,9 +27,12 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 10px;
+
+
+                
             }
 
-            .contenido:hover{
+            &:hover{
                 opacity: 1;
                 background-color: rgba(255, 0, 0, 0.47);
                 color: white;
@@ -45,55 +41,40 @@
                 font-size: 32px;
                 transition: 1.3s;
                 transition: background-color 1.5s;
+
+                
             }
 
             a{
                 text-decoration: none;
             }
-
-
-            
             
         }
 
         .boxeo{
-        @extend %clases;
-        background-image: url(../../imagenes/boxeo.jpg);
+        @include clases ( url(../imagenes/bx.jpg));
         }
 
         .crossfit{
-            @extend %clases;    
-            background-image: url(../../imagenes/crossfit.jpg);
-           
-
+            @include clases ( url(../imagenes/crossfit.jpg));
         }
 
         .spinning{
-            @extend %clases;
-            background-image: url(../../imagenes/spinning.jpg);
-    
+            @include clases ( url(../imagenes/spinning.jpg));
         }
         
         .zumba{
-            @extend %clases;
-            background-image: url(../../imagenes/zumba.jpg);
-    
+            @include clases ( url(../imagenes/zumba.jpg));
         }
         
         .gimnasio{
-            @extend %clases;
-            background-image: url(../../imagenes/gym.jpeg);
-    
+            @include clases ( url(../imagenes/gym.jpeg));
         }
         
         
         .football{
-            @extend %clases;
-            background-image: url(../../imagenes/football.jpeg);
-    
+            @include clases ( url(../imagenes/football.jpeg));
         }
-
-        
     }
 
     
@@ -101,15 +82,73 @@
     
 }
 
-@include mediaQuery (tablet){
+
+
+@include mediaQuery (desktop){
+    .inicio{
+    
+        .actividades{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 30px;
+    
+            
+            
+            .tarjetas{
+                width: 500px;
+                height: 350px;
+                border-radius: 10px;
+                background-position: center;
+                background-size: cover;
+                
+    
+                .contenido{
+                    opacity: 0;
+                    width: 500px;
+                    height: 350px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+
+                    &:hover{
+                        opacity: 1;
+                        background-color: rgba(255, 0, 0, 0.47);
+                        color: white;
+                        text-transform: uppercase;
+                        font-family: $fuente-principal;
+                        font-size: 32px;
+                        transition: 1.3s;
+                        transition: background-color 1.5s;
+                        width: 500px;
+                    }
+    
+                    
+                }
+                
+                
+    
+                
+                
+            }
+    
+            
+        }
+    }
+
+}
+
+
+@include mediaQuery (mobile){
     .inicio{
         .centrar__h1{
            h1{
             font-size: 50px;
            }
         }
-        
-    
+
         .actividades{
             .tarjetas{
                 
@@ -131,32 +170,8 @@
                     transition: 1.3s;
                     transition: background-color 1.5s;
                 }
-    
-            }
-    
-            .boxeo{
-            }
-    
-            .crossfit{
-            }
-    
-            .spinning{
-            }
-            
-            .zumba{
-            }
-            
-            .gimnasio{
-            }
-            
-            
-            .football{
-            }
-    
-            
+            } 
         }
-    
     }
 }
-
 

@@ -143,7 +143,28 @@
     }
 }
 
-@media only screen and (max-width: 768px){
+@include mediaQuery (tablet){
+    .pie-pagina {
+
+        .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+        }
+    }
+
+
+    .headerInicio{    
+        .container-fluid{
+            .navbar-brand{
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+@include mediaQuery (mobile){
     .pie-pagina {
 
         .grupo-1{
@@ -162,8 +183,8 @@
             }
         }
     }
-}
 
+}
 
 .fa-solid{
     color: map-get($map: $colores, $key:"principal" );
