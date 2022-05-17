@@ -1,0 +1,94 @@
+@import "../base/_variables.scss";
+.error{
+    height: 100vh;
+    .contenedor{
+        width: 100%;
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        h1{
+            font-size: 160px;
+            margin: 0;
+            font-weight: 900;
+            letter-spacing: 20px;
+            background: map-get($map: $colores, $key: "principal");
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+            
+        }
+    
+        a{
+            text-decoration: none;
+            background: map-get($map: $colores, $key: "principal");
+            color: #fff;
+            padding: 12px 24px;
+            display: inline-block;
+            border-radius: 25px;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.4s;
+    
+            &:hover{
+                background: #e55039;
+            }
+        }
+      }
+}
+
+@include mediaQuery (mobile){
+    .error{
+        height: 130vh;
+        .contenedor{
+            width: 100%;
+            position: absolute;
+            top: 80%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: white;
+            font-size: 40px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            h1{
+                font-size: 160px;
+                margin: 0;
+                font-weight: 900;
+                letter-spacing: 20px;
+                background: map-get($map: $colores, $key: "principal");
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+    
+                
+            }
+        
+            a{
+                text-decoration: none;
+                background: map-get($map: $colores, $key: "principal");
+                color: #fff;
+                padding: 12px 24px;
+                display: inline-block;
+                border-radius: 25px;
+                font-size: 14px;
+                text-transform: uppercase;
+                transition: 0.4s;
+        
+                &:hover{
+                    background: #e55039;
+                }
+            }
+          }
+    }
+}
