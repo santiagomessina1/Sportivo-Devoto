@@ -51,7 +51,7 @@ $colores: (
 @mixin clases ($img) {
     background-image: $img;
     height: 300px;
-    background-size: 450px;
+    background-size: cover;
     background-position: center;
     
 }
