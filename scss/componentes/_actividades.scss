@@ -53,7 +53,8 @@
         }
         
         .zumba{
-            @include clases ( url(../imagenes/zumba.jpg));
+            @include clases (url(../imagenes/zumba.jpg));
+            background-size: 450px
         }
         
         .gimnasio{
