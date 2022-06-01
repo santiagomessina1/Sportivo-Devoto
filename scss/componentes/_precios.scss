@@ -3,8 +3,8 @@
 main{
     .bodyBg{
         background-color:map-get($map: $colores, $key:"fondo" ); 
-        
     }
+
     .centrar__h1{
         @extend %flex;
         color: map-get($map: $colores, $key:"texto" );
@@ -27,10 +27,8 @@ main{
         width: 800px;
         
         .col-sm-6{
-            
-            
+
             .card{
-                
                 margin: 30px;
                 background-color: rgb(230, 230, 230);
                 text-align: center;
@@ -47,7 +45,6 @@ main{
                     .card-title{
                         font-size: 30px; 
                     }
-                    
                     
                     .precio{
                         background-color: map-get($map: $colores, $key:"principal" );
@@ -70,13 +67,8 @@ main{
                 transform: scale(1.06);
                 transition: transform 1s;
             }
-
-            
         }
-        
     }
-
-    
 }
 }
 @include mediaQuery (desktop){
@@ -86,7 +78,6 @@ main{
         }
 
         .inicio2{
-            
             
             .row{
                 width: 450px;
@@ -98,9 +89,9 @@ main{
                     width: 550px;
                     padding: 0;
                     .card{
-                        
-                    padding-right: 0;
-                }   }
+                        padding-right: 0;
+                    }
+                }
             }
         }
     }
@@ -119,11 +110,11 @@ main{
                 margin: auto;
                 .col-sm-6{
                     width: 500px;
-                    padding-right: 0;
+                    padding: 0;
                     .card{
-                        
-                    padding-right: 0;
-                }   }
+                        padding-right: 0;
+                    }
+                }
             }
         }
     }
@@ -140,11 +131,11 @@ main{
                 width: 350px;
                 .col-sm-6{
                     width: 320px;
-                    padding-right: 0;
+                    padding: 0;
                     .card{
-                        
-                    padding-right: 0;
-                }   }
+                        padding-right: 0;
+                    }
+                }
             }
         }
     }

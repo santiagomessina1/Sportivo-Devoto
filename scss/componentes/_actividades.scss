@@ -9,40 +9,29 @@
         flex-wrap: wrap;
         gap: 10px;
         padding-bottom: 30px;
-
-        
         
         .tarjetas{
             width: 400px;
             height: 300px;
             border-radius: 10px;
 
-            
-
             .contenido{
                 opacity: 0;
                 width: 400px;
                 height: 300px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flexbox (row, center, center);
                 border-radius: 10px;
-
-
-                
             }
 
             &:hover{
                 opacity: 1;
                 background-color: rgba(255, 0, 0, 0.47);
-                color: white;
+                color: map-get($map: $colores, $key: "texto");
                 text-transform: uppercase;
                 font-family: $fuente-principal;
                 font-size: 32px;
                 transition: 1.3s;
                 transition: background-color 1.5s;
-
-                
             }
 
             a{
@@ -102,21 +91,18 @@
                 border-radius: 10px;
                 background-position: center;
                 background-size: cover;
-                
-    
+
                 .contenido{
                     opacity: 0;
                     width: 500px;
                     height: 350px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexbox (row, center, center);
                     border-radius: 10px;
 
                     &:hover{
                         opacity: 1;
                         background-color: rgba(255, 0, 0, 0.47);
-                        color: white;
+                        color: map-get($map: $colores, $key: "texto");
                         text-transform: uppercase;
                         font-family: $fuente-principal;
                         font-size: 32px;
@@ -124,20 +110,10 @@
                         transition: background-color 1.5s;
                         width: 500px;
                     }
-    
-                    
                 }
-                
-                
-    
-                
-                
             }
-    
-            
         }
     }
-
 }
 
 
@@ -151,15 +127,12 @@
 
         .actividades{
             .tarjetas{
-                
                 width: 300px;
                 height: 300px;
                 .contenido{
                     width: 300px;
                     height: 300px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexbox (row, center, center);
                     border-radius: 10px;
                     opacity: 1;
                     background-color: rgba(255, 0, 0, 0.47);

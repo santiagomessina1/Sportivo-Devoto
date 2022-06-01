@@ -10,13 +10,11 @@
         grid-row-gap: 0px;
         gap: 12px;
         margin-left: 20px;
-        
-
 
         .boxeo1 { 
             grid-area: 1 / 1 / 2 / 2; 
-            background-color: map-get($map: $colores, $key:"secundario");;
-             color: map-get($map: $colores, $key:"texto");;
+            background-color: map-get($map: $colores, $key:"secundario");
+            color: map-get($map: $colores, $key:"texto");
             @extend %actividades;
 
             .contenido1{
@@ -35,7 +33,7 @@
             .fa-solid{ color: map-get($map: $colores, $key:"texto");}
 
             .contenido1{
-                @include contenido (map-get($map: $colores, $key:"texto"))
+                @include contenido (map-get($map: $colores, $key:"texto"));
             }
             }
         .spinning1 {
@@ -46,7 +44,7 @@
              
 
              .contenido1{
-                @include contenido (map-get($map: $colores, $key:"principal"))
+                @include contenido (map-get($map: $colores, $key:"principal"));
             }
             }
         .zumba1 {
@@ -61,7 +59,7 @@
             .fa-solid{color: map-get($map: $colores, $key:"texto");}
 
             .contenido1{
-                @include contenido (map-get($map: $colores, $key:"texto"))
+                @include contenido (map-get($map: $colores, $key:"texto"));
             }
             }
         .gimnasio1 { 
@@ -77,8 +75,8 @@
         .football1 { 
             grid-area: 2 / 3 / 3 / 4; 
             background-color: map-get($map: $colores, $key:"principal");
-             color: map-get($map: $colores, $key:"texto");;
-             @extend %actividades;
+            color: map-get($map: $colores, $key:"texto");
+            @extend %actividades;
 
             h3{
                 color: map-get($map: $colores, $key:"texto");
@@ -86,7 +84,7 @@
             .fa-solid {color: map-get($map: $colores, $key:"texto");}
 
             .contenido1{
-                @include contenido (map-get($map: $colores, $key:"texto"))
+                @include contenido (map-get($map: $colores, $key:"texto"));
             }
         }
     }
@@ -110,9 +108,7 @@
             .zumba1 { grid-area: 4 / 1 / 5 / 2; }
             .gimnasio1 { grid-area: 5 / 1 / 6 / 2; }
             .football1 { grid-area: 6 / 1 / 7 / 2; }
-       
         }
     }
-
 }
 
