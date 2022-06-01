@@ -66,8 +66,15 @@ main .centrar__h1, main .inicio2 {
     display: flex;
     align-items: center; }
     .headerInicio .container-fluid .navbar-nav .nav-item .nav-link {
+      box-shadow: inset 0 0 0 0 #f98383;
+      color: #54b3d6;
+      transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
       margin: 15px;
       text-transform: uppercase; }
+      .headerInicio .container-fluid .navbar-nav .nav-item .nav-link:hover {
+        box-shadow: inset 150px 0 0 0 red;
+        color: white;
+        transition: box-shadow 1.5s; }
 
 .pie-pagina {
   width: 100%;

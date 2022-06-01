@@ -31,7 +31,7 @@ $colores: (
     };
 }
 
-@mixin flexbox ($direction, $justify, $align,){
+@mixin flexbox ($direction, $justify, $align){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -67,13 +67,10 @@ $colores: (
     background-position: center;
 }
 
-
-
-
 %flex{
     display: flex;
     justify-content: center;
-};
+}
 
 %titulo{
     display: flex;
@@ -84,7 +81,7 @@ $colores: (
     font-style: italic;
     margin-top: 20px;
     text-align: center;
-};
+}
 
 %contenido1{
     font-family: $fuente-principal;

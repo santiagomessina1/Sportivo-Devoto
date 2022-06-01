@@ -15,7 +15,6 @@
 
     .container-fluid{
     
-
         .navbar-brand{
             text-transform: uppercase;
             font-size: 24px;
@@ -38,8 +37,18 @@
             .nav-item{
     
                 .nav-link{
+
+                    box-shadow: inset 0 0 0 0 rgb(249, 131, 131);
+                    color: #54b3d6;
+                    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
                     margin: 15px; 
                     text-transform: uppercase; 
+                    
+                    &:hover{
+                        box-shadow: inset 150px 0 0 0 map-get($map: $colores, $key: "principal" );
+                        color: map-get($map: $colores, $key: "texto" );
+                        transition: box-shadow 1.5s;
+                    }
                 }
             }
         }
