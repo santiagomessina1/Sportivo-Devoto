@@ -75,7 +75,7 @@
             a{
                 text-decoration: none;
                 background: map-get($map: $colores, $key: "principal");
-                color: #fff;
+                color: map-get($map: $colores, $key: "texto");
                 padding: 12px 24px;
                 display: inline-block;
                 border-radius: 25px;
@@ -84,7 +84,7 @@
                 transition: 0.4s;
         
                 &:hover{
-                    background: #e55039;
+                    background: map-get($map: $colores, $key: "principal");
                 }
             }
           }
